@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue js</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="vue-app">
+    <h1>{{ greet('afternoon') }}</h1>
+    <h1>{{ name }}</h1>
+    <p>{{ job }}</p>
+
+    <a v-bind:href="website">The net ninja</a>
+
+    <!-- <button @click="add">Add a year</button>
+    <button @click="sub">Subtract a year</button>
+    <p>My age is {{ age }}</p> -->
+
+    <h1>Computed properties</h1>
+    <button @click="a++">Add to A</button>
+    <button @click="b++">Add to B</button>
+    <p>A = {{ a }}</p>
+    <p>B = {{ b }}</p>
+    <p>Age + A = {{ addToA }}</p>
+    <p>Age + B = {{ addToB }}</p>
+
+  </div>
+  <div id="vue-apps">
+    <h1>Dynamic CSS</h1>
+    <h2>Example 1</h2>
+    <div @click="available = !available" v-bind:class="{available:avai lable}">
+      <span>John Jones</span>
+    </div>
+    <h2>Example 2</h2>
+  </div>
+
+  <script src="app.js"></script>
+  <script src="new.js"></script>
+</body>
+
+</html>
